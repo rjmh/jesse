@@ -1,3 +1,5 @@
-{build, "rebar -C rebar_eqc-ci.config compile"}.
+{build, "rebar -C rebar_eqc-ci.config get-deps && rebar -C rebar_eqc-ci.config compile"}.
 {test_path, "ebin"}.
 {test_root, "test"}.
+{deps, "deps/jiffy/ebin"}.
+{deps, "deps/jiffy/priv"}.
